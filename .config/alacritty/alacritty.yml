@@ -1,0 +1,84 @@
+background_opacity: 0.85
+
+draw_bold_text_with_bright_colors: true
+
+# Colors ----> # nightfly theme
+colors:
+  # Default colors
+  primary:
+    background:        '#011627'
+    foreground:        '#acb4c2'
+    bright_foreground: '#eeeeee'
+
+  # Cursor colors
+  cursor:
+    text:   '#080808'
+    cursor: '#9ca1aa'
+
+  # Selection colors
+  selection:
+    text:       '#080808'
+    background: '#b2ceee'
+
+  # Normal colors
+  normal:
+    black:   '#1d3b53'
+    red:     '#fc514e'
+    green:   '#a1cd5e'
+    yellow:  '#e3d18a'
+    blue:    '#82aaff'
+    magenta: '#c792ea'
+    cyan:    '#7fdbca'
+    white:   '#a1aab8'
+
+  # Bright colors
+  bright:
+    black:   '#7c8f8f'
+    red:     '#ff5874'
+    green:   '#21c7a8'
+    yellow:  '#ecc48d'
+    blue:    '#82aaff'
+    magenta: '#ae81ff'
+    cyan:    '#7fdbca'
+    white:   '#d6deeb'
+    
+font:
+  bold:
+    family: UbuntuMono Nerd Font
+    # family: mononoki Nerd Font
+    # family: agave Nerd Font
+    # family: Caskaydia Cove Nerd Font
+    # family: JetBrains Mono ExtraBold Nerd Font 
+    # family: Hurmit Nerd Font Mono
+    # family: DaddyTimeMono Nerd Font
+    # family: Iosevka NF
+    # family: Hack NF
+    # family: SpaceMono NF
+  italic:
+    family: UbuntuMono Nerd Font
+    # family: mononoki Nerd Font
+    # family: agave Nerd Font
+    # family: Caskaydia Cove Nerd Font
+    # family: JetBrains Mono Medium Nerd Font
+    # family: Hurmit Nerd Font Mono
+    # family: DaddyTimeMono Nerd Font
+    # family: Iosevka NF
+    # family: Hack NF
+    # family: SpaceMono NF
+  normal:
+    family: UbuntuMono Nerd Font
+    # family: mononoki Nerd Font
+    # family: agave Nerd Font
+    # family: Caskaydia Cove Nerd Font
+    # family: JetBrains Mono Medium Nerd Font
+    # family: Hurmit Nerd Font Mono
+    # family: DaddyTimeMono Nerd Font
+    # family: Iosevka NF
+    # family: Hack NF
+    # family: SpaceMono NF
+    style: Regular
+  size: 14
+
+window:
+  padding:
+    x: 2
