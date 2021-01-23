@@ -17,15 +17,15 @@ disabled = false
 [git_branch]
 style = "bold purple"
 
-[git_status]
-conflicted = "🏳"
-ahead = "🏎💨"
-behind = "😰"
-diverged = "😵"
-untracked = "🤷‍"
-stashed = "📦"
+# [git_status]
+# conflicted = "🏳"
+# ahead = "🏎💨"
+# behind = "😰"
+# diverged = "😵"
+# untracked = "🤷‍"
+# stashed = "📦"
 # modified = "📝"
-staged = '[++\($count\)](green)'
+# staged = '[++\($count\)](green)'
 # renamed = "👅"
 # deleted = "🗑"
 
