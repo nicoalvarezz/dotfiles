@@ -13,7 +13,6 @@
   * Network
   * Systray
   * Notifications
-  * Xprofile
 * Extra Config and Tools
   * AUR Helper
   * File Manager
@@ -27,7 +26,8 @@
   * Basic Utilities
   * Fonts, Theming and GTK
   * Apps
-  
+* References
+
   ### Arch Installation
   Arfter completing the installation following the arch linux guide found in their wiki, the first thing to do is to set up the wi-fi connection.:
   ```
@@ -175,5 +175,28 @@
   
   I can add all of this application in the `autostart.sh` file of qtile.
   ```
-  
+  volumeicon & # Icono volumen
+  udiskie -t & # montar usbs
+  cbatticon -u 5 & # Batterry icon 
+  nm-applet & # Network icon
   ```
+  
+  #### Notfifications
+  To have desktop notifications I used `libnotify` and `notification-daemon`.
+  ```
+  sudo pacman -S libnotify notification-daemon
+  ```
+ 
+  To get notifications in a tiling windo manager:
+  ```
+  # Create this file with nano or vim
+  sudo nano /usr/share/dbus-1/services/org.freedesktop.Notifications.service
+  # Paste these lines
+  [D-BUS Service]
+  Name=org.freedesktop.Notifications
+  Exec=/usr/lib/notification-daemon-1.0/notification-daemon
+  ```
+  
+  
+  
+  Documentaetion to be continued......
