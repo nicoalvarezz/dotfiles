@@ -13,5 +13,17 @@
   * Notifications
   * Xprofile
 * Extra Config and Tools
-
+  * AUR Helper
+  * File Manager
+  * Trash
+  * GTK Theming
+  * Lightdm Theming
+  * Multimedia
+    * Images
+    * Videos and Audio
+* Software
+  * Basic Utilities
+  * Fonts, Theming and GTK
+  * Apps
+  
 
