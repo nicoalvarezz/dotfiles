@@ -2,6 +2,7 @@
 (Image)
 
 ## Table of Contents
+* Arch Installation
 * Login and Window Manager
 * Basic Qtile Config
 * Basic System Utilities
