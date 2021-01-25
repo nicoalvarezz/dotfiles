@@ -170,5 +170,10 @@
   #### Systray
   By default, you have a system tray in qtile. I can launch such as the one's that I installed, plus some new ones.
   ```
-  sudo pacman -S volumeincon....
+  sudo pacman -S volumeincon cbatticoon
+  ```
+  
+  I can add all of this application in the `autostart.sh` file of qtile.
+  ```
+  
   ```
