@@ -116,6 +116,17 @@
    Nitrogen will set the wallpaper automatically without the need to add a line in the .xsseion. It will also provide a simple interface 
    that lets me previsualize all my wallpaepers.
   
+  #### Fonts
+  Font packages:
+  ```
+  sudo pacman -S ttf-dejavu ttf-liberation noto-fonts
+  ```
+  
+  List all the fonts:
+  ```
+  fc-list
+  ```
+  
   
   
   
