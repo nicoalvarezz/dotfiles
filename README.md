@@ -7,6 +7,8 @@
 * Basic System Utilities
   * Wallpapers
   * Fonts
+  * Audio
+  * Brightness
   * Monitors
   * Network
   * Systray
@@ -127,8 +129,21 @@
   fc-list
   ```
   
+  #### Audio
+  For audio two main programs are neede: `puslseaudio` and `pavucontrol #Grafical interface to control the audo (no keybinding at first)` 
+  ```
+  sudo pacman -S pulseaudio pavucontrol
+  ```
   
+  In my configuration you can notice that the keybindings are not enabled, this is because I do not require of the audi in the set up that im currently working,
+  However, the keys can be activated anytime. 
   
+  #### Brightness
+  For brightnes I installed `brightnessctl`
+  ```
+  sudo pacman -S brightnessctl
+  ```
+  Same with audio, my keybindings for brightness are not enabled, because I do not require of them.
   
   
   
