@@ -27,4 +27,7 @@
   * Fonts, Theming and GTK
   * Apps
   
-
+  ### Arch Installation
+  Arfter completing the installation following the arch linux guide found in their wiki, the first thing to do is to set up the wi-fi connection.
+  
+  `cdcd`
