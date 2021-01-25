@@ -33,4 +33,13 @@
   ```
   pacman -S networkmanager
   systemctl enable NetworkManager
+  sudo rfkill unblock wifi
+  sudo ip link set wlo1  up # network card up
+  ```
+  
+  Now bootloader must be installed, after mouting efi partion on /boot
+  ```
+  pacman -S grub efibotmgr
+  grub-install --target=x86_64-efi --efi-direcotory=/boot
+  grub-mkconfig -o /boot/grub.cfg
   ```
