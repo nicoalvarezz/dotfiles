@@ -78,4 +78,32 @@
   sudo pacman -S xorg
   ```
   
+  ### Loging and Window Manager
+  For a better user experience when logging in I installed Lightdm. The deskto emvironment that I'll for the start of my configurataion is qtile. 
+  I also installed a text editor, bettert terminal (I don't really like xterm) greeter (for ligthdm to work) and my browser of choice brave 
+  (I also installed google later on in the explanation).
+  ```
+  sudo pacman -S lightndm lightdm-gtk-greeter qtile alacritty code
+  ```
+  
+  To install brave I installed and enabled the snaps:
+  ```
+  git clone https://aur.archlinux.org/snapd.git
+  cd snapd
+  makepkg -si
+  sudo systemctl enable --now snapd.socket
+  ```
+  
+  I aslo created a symbolic link and installe brave:
+  ```
+  sudo ln -s /var/lib/snapd/snap /snap
+  sudo snap install brave
+  ```
+  
+  
+  
+  
+  
+  
+  
   
