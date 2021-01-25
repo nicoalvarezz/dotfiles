@@ -145,5 +145,30 @@
   ```
   Same with audio, my keybindings for brightness are not enabled, because I do not require of them.
   
+  #### Monitors
+  In my case I have a monitor connected to my laptop, and I only use that monitor. So what I did was to disable the laptop image and have the monitor 
+  as the primary output. To do so I used a  graphical interface called `arandr`
+  ```
+  sudo pacaman -S arandr
+  ```
+  Thanks to this software I was ablet to save the layout I wanted to use. This gave me a sheel script with the exact xrandr command that I needed.
+  I added this command to the .xsession file so the OS sets the screen xactly as I want every time I turn on the computer.
   
+  #### Storage
+  To automate external hard drives or USB I used `udisk` and `usiskie`.  udisks is a dependency of udiskie, so we only need to install the last one. 
+  I also installed ntfs-3g package to read and write NTFS formatted drives:
+  ```
+  sudo pacamn -S udiskie ntfs-3g
+  ```
   
+  #### Network
+  I used nmcli to se the network, however, a graphical frontend is more friendly. For this I used `nm-applet`:
+  ```
+  sudo pacman -S network-manager-applet
+  ```
+  
+  #### Systray
+  By default, you have a system tray in qtile. I can launch such as the one's that I installed, plus some new ones.
+  ```
+  sudo pacman -S volumeincon....
+  ```
