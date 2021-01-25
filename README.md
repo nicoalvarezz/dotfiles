@@ -4,7 +4,6 @@
 ## Table of Contents
 * Arch Installation
 * Login and Window Manager
-* Basic Qtile Config
 * Basic System Utilities
   * Wallpapers
   * Fonts
@@ -100,7 +99,22 @@
   sudo snap install brave
   ```
   
+  ### Basic System Utilities
+  In this section I will cover some of the software that I installed for a better user experience.
   
+  #### Wallpaper
+  To set the wallpaper I ferts used `feh`. 
+  ```
+  sudo pacman -S feh
+  feh --bg--scale path/to/wallpaper # xsession file
+  ```
+   However, I found a better software which is easier to set wallpapers. This software is called `nitrogen`
+   ```
+   suso pacman -S nitrogen
+   ```
+   
+   Nitrogen will set the wallpaper automatically without the need to add a line in the .xsseion. It will also provide a simple interface 
+   that lets me previsualize all my wallpaepers.
   
   
   
