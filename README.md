@@ -1,5 +1,5 @@
 # Dotfiles & Configs
-(Image)
+![alt text](https://github.com/NicolasAlvarez16/dotfiles/blob/main/Images/2021-01-26-145319_1920x1080_scrot.png)
 
 ## Table of Contents
 * Arch Installation
