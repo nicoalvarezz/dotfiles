@@ -6,7 +6,8 @@
         "graphql",
         "html",
         "yaml",
-        "json"
+        "json",
+        "clangd"
     ],
     "python.linting.enabled": true,
     "python.linting.pylintEnabled": true,
@@ -15,5 +16,6 @@
         "UltiSnips",
         "~/.config/nvim/utils/snips"
     ],
-    "explorer.icon.enableVimDevicons": true
+    "explorer.icon.enableVimDevicons": true,
+    "clangd.path": "/home/nico/.config/coc/extensions/coc-clangd-data/install/11.0.0/clangd_11.0.0/bin/clangd"
 }

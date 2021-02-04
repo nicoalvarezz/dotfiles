@@ -15,8 +15,8 @@ layouts = [
     layout.Max(),
     layout.MonadTall(**layout_conf),
     layout.MonadWide(**layout_conf),
-    layout.Bsp(**layout_conf),
-    layout.Matrix(layout_conf),
+    # layout.Bsp(**layout_conf),
+    # layout.Matrix(layout_conf),
     # layout.Stack(num_stacks=2),
     # Try more layouts by unleashing below layouts.
     # layout.Columns(),
