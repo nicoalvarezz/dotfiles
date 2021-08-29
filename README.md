@@ -196,7 +196,3 @@
   Name=org.freedesktop.Notifications
   Exec=/usr/lib/notification-daemon-1.0/notification-daemon
   ```
-  
-  
-  
-  Documentaetion to be continued......
