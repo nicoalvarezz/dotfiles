@@ -1,51 +1,38 @@
 background_opacity: 0.85
-
 draw_bold_text_with_bright_colors: true
 
-# Colors ----> # nightfly theme
 colors:
-  # Default colors
+  name: Erebus
+  author: ""
   primary:
-    background:        '#011627'
-    foreground:        '#acb4c2'
-    bright_foreground: '#eeeeee'
-
-  # Cursor colors
+    background: "#000000"
+    foreground: "#ffffff"
   cursor:
-    text:   '#080808'
-    cursor: '#9ca1aa'
-
-  # Selection colors
-  selection:
-    text:       '#080808'
-    background: '#b2ceee'
-
-  # Normal colors
+    text: "#000000"
+    cursor: "#ffffff"
   normal:
-    black:   '#1d3b53'
-    red:     '#fc514e'
-    green:   '#a1cd5e'
-    yellow:  '#e3d18a'
-    blue:    '#82aaff'
-    magenta: '#c792ea'
-    cyan:    '#7fdbca'
-    white:   '#a1aab8'
-
-  # Bright colors
+    black: "#757575"
+    red: "#ff5f5f"
+    green: "#de8a36"
+    yellow: "#d78787"
+    blue: "#af5fd7"
+    magenta: "#ff87d7"
+    cyan: "#dea3e5"
+    white: "#b8b8b8"
   bright:
-    black:   '#7c8f8f'
-    red:     '#ff5874'
-    green:   '#21c7a8'
-    yellow:  '#ecc48d'
-    blue:    '#82aaff'
-    magenta: '#ae81ff'
-    cyan:    '#7fdbca'
-    white:   '#d6deeb'
-    
+    black: "#b8b8b8"
+    red: "#d78787"
+    green: "#ff9f6f"
+    yellow: "#ff5f5f"
+    blue: "#dea3e5"
+    magenta: "#d7afaf"
+    cyan: "#af5fd7"
+    white: "#757575"
+
 font:
   bold:
-    family: UbuntuMono Nerd Font
-    # family: mononoki Nerd Font
+    # family: Menlo
+    family: mononoki Nerd Font
     # family: agave Nerd Font
     # family: Caskaydia Cove Nerd Font
     # family: JetBrains Mono ExtraBold Nerd Font 
@@ -55,8 +42,8 @@ font:
     # family: Hack NF
     # family: SpaceMono NF
   italic:
-    family: UbuntuMono Nerd Font
-    # family: mononoki Nerd Font
+    # family: Menlo
+    family: mononoki Nerd Font
     # family: agave Nerd Font
     # family: Caskaydia Cove Nerd Font
     # family: JetBrains Mono Medium Nerd Font
@@ -66,8 +53,8 @@ font:
     # family: Hack NF
     # family: SpaceMono NF
   normal:
-    family: UbuntuMono Nerd Font
-    # family: mononoki Nerd Font
+    # family: Menlo
+    family: mononoki Nerd Font
     # family: agave Nerd Font
     # family: Caskaydia Cove Nerd Font
     # family: JetBrains Mono Medium Nerd Font
@@ -77,8 +64,9 @@ font:
     # family: Hack NF
     # family: SpaceMono NF
     style: Regular
-  size: 14
+  size: 16
 
 window:
   padding:
     x: 2
+theme: Erebus
