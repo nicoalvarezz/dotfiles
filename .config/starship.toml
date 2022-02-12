@@ -31,3 +31,19 @@ style = "bold purple"
 
 [python]
 symbol = "  "
+
+[java]
+symbol = " "
+
+[conda]
+ignore_base = false
+symbol = "🐍"
+style = "bold green"
+format = "via [$symbol $environment]($style) "	
+
+[username]
+style_user = "#fcb825 bold"
+style_root = "black bold"
+format = "[$user]($style)@macosx "
+disabled = false
+show_always = true
