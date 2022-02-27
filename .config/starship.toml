@@ -31,7 +31,7 @@ style = "bold purple"
 # deleted = "🗑"
 
 [python]
-symbol = "  "
+symbol = " "
 
 [java]
 symbol = " "
@@ -48,3 +48,4 @@ style_root = "black bold"
 format = "[$user]($style)@macosx⚡️ "
 disabled = false
 show_always = true
+
