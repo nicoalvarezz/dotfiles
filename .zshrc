@@ -12,21 +12,19 @@ eval "$(starship init zsh)"
 export ZSH="$HOME/.oh-my-zsh"
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
+# Shortcuts
+alias deltaload='cd ~/LocalDocs/GitHub/deltaload'
+alias rufus-stats='cd ~/LocalDocs/GitHub/rufus-stats'
+alias rufus-app='cd ~/LocalDocs/GitHub/rufus-app'
+alias renv='./renv.sh'
+alias renv_build='source renv.sh build'
 
-# # >>> conda initialize >>>
-# # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/Users/nico/opt/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/Users/nico/opt/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/Users/nico/opt/anaconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/Users/nico/opt/anaconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
+# iCloud shortcuts
+alias uni='cd ~/Library/Mobile\ Documents/com~apple~CloudDocs/TU_Dublin'
+alias icloud='cd ~/Library/Mobile\ Documents/com~apple~CloudDocs'
+alias hive='cd ~/Library/Mobile\ Documents/com~apple~CloudDocs/TU_Dublin/Year_4/FYP/hive'
 
-# Alias
+# Commands
 alias ls='lsd'
+alias java11='export JAVA_HOME=/usr/local/opt/openjdk@11 && mvn -v'
+alias java17='export JAVA_HOME=/usr/local/opt/openjdk@17 && mvn -v'
