@@ -1,12 +1,10 @@
-# ~/.config/starship.toml
-
 # Don't print a new line at the start of the prompt
 add_newline = false
 
 # Replace the "❯" symbol in the prompt with "➜"
 [character]                            # The name of the module we are configuring is "character"
 success_symbol = "[➜](bold green)"     # The "success_symbol" segment is being set to "➜" with the color "bold green"
-error_symbol = "[➜](bold red)"
+# error_symbol = "[➜](bold red)"
 
 # Disable the package module, hiding it from the prompt completely
 [package]
@@ -19,16 +17,16 @@ disabled = false
 style = "bold purple"
 
 # [git_status]
-# conflicted = "🏳"
-# ahead = "🏎💨"
+# conflicted = "🏳 "
+# ahead = "🏎 💨"
 # behind = "😰"
 # diverged = "😵"
-# untracked = "🤷‍"
+# untracked = "🤷<200d>"
 # stashed = "📦"
 # modified = "📝"
 # staged = '[++\($count\)](green)'
 # renamed = "👅"
-# deleted = "🗑"
+# deleted = "🗑 "
 
 [python]
 symbol = " "
@@ -40,12 +38,11 @@ symbol = " "
 ignore_base = false
 symbol = "🐍"
 style = "bold green"
-format = "via [$symbol $environment]($style) "	
+format = "via [$symbol $environment]($style) "
 
 [username]
-style_user = "#db62d9 bold"
+style_user = "#fab795 bold"
 style_root = "black bold"
-format = "[$user]($style)@macosx⚡️ "
+format = "[$user]($style)@macosx 👻 "
 disabled = false
 show_always = true
-
