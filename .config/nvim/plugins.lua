@@ -14,6 +14,10 @@ local plugins = {
         "rust_analyzer"
       }
     }
+  },
+  {
+    "christoomey/vim-tmux-navigator",
+    lazy = false,
   }
 }
 
