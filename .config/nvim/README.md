@@ -1,14 +1,13 @@
 # NVIN cofigs
 
-This configs are for nvimhchad. To use them just install nvimchad as normal and place them in the specified locations.
+This configs are for NvChad. To use them just install nvimchad as normal and place them in the specified locations.
 
 # File Locations
 
 The `init.lua` file store the remaps
 
 ```lua
-init.lua ---> nvim/lua/custom
-
+init.lua -----> nvim/lua/custom
 ```
 
 The `lspconfig.lua` stores the language server configs
