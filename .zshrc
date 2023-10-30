@@ -36,4 +36,4 @@ alias obsidian-sync='sh ~/Documents/Github/utilities/obsidian_sync.bash'
 alias vim=nvim 
 alias c=clear
 alias e=exit
-alias ..=cd ..
+
