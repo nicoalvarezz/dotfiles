@@ -28,8 +28,6 @@ alias uni='cd ~/Library/Mobile\ Documents/com~apple~CloudDocs/TU_Dublin'
 alias zshrc='nvim ~/.zshrc'
 alias obsidian-sync='sh ~/Documents/Github/utilities/obsidian_sync.bash'
 alias vim=nvim 
-alias c=clear
-alias e=exit
 
 # git aliases
 alias ga='git add .' # git add all files
