@@ -2,6 +2,9 @@
 #
 #Author: @thePrimagen
 
+# it would be nice to have a check that if I am in the searched directory but the current dir is not the one i searched for i cd to that one 
+
+
 if [[ $# -eq 1 ]]; then
   selected=$1
 else
