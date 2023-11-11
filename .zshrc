@@ -37,3 +37,10 @@ alias vim=nvim
 alias c=clear
 alias e=exit
 
+# git aliases
+alias gc='git_commit_with_branch'
+git_commit_with_branch() {
+  branch_name=$(git branch --show-current)
+  commit_message="$branch_name $*"
+  git commit -m "$commit_message"
+}
