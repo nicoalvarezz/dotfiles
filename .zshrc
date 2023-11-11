@@ -57,3 +57,4 @@ git_commit_with_branch() {
   commit_message="$branch_name $*"
   git commit -m "$commit_message"
 }
+
