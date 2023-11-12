@@ -56,3 +56,18 @@ git_commit_with_branch() {
   git commit -m "$commit_message"
 }
 
+# tmux aliases
+
+alias tska='tmux kill-ses -a' # kill al sessions but current
+
+alias tskn='kill_a_given_session_using_fzf' # kill a given session name
+kill_a_given_session_using_fzf() {
+  if [[ $# -eq 1 ]] then
+    selected=$1
+  else
+    # ls all tmux sessions; take the first word; remove last character (which is ':'); pipe it through fzf
+    selected=$(tmux ls | sed 's/ .*//' | sed 's/.$//' | fzf)
+  fi
+  tmux kill-ses -t $selected
+}
+
