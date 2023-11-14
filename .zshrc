@@ -37,6 +37,7 @@ alias diff='git diff'
 alias gpl='git pull origin $(git branch --show-current)' # pull from current branch
 alias gck='git checkout' # checkout to existing branch
 alias gckb='git checkout -b' # checkout to a new branch
+alias s='git status'
 
 alias gps='git_push_with_branch_check'
 git_push_with_branch_check() {
