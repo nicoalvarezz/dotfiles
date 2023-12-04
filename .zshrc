@@ -12,31 +12,25 @@ ZSH_DISABLE_COMPFIX="true"
 # export ZSH="$HOME/.oh-my-zsh"
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
-
-alias cat='bat --theme OneHalfDark'
-alias icloud='cd ~/Library/Mobile\ Documents/com~apple~CloudDocs'
+# Category: Java Env
 alias java11='export JAVA_HOME=/usr/local/opt/openjdk@11 && mvn -v'
 alias java17='export JAVA_HOME=/usr/local/opt/openjdk@17 && mvn -v'
+
+# Category: Utilities
+alias cat='bat --theme OneHalfDark'
 alias ls=lsd
-alias renv=./renv.sh
-alias renv_build='source renv.sh build'
-alias rufus-app='cd ~/LocalDocs/GitHub/rufus-app'
-alias rufus-stats='cd ~/LocalDocs/GitHub/rufus-stats'
-alias run-help=man
 alias status='git status'
-alias uni='cd ~/Library/Mobile\ Documents/com~apple~CloudDocs/TU_Dublin'
 alias zshrc='nvim ~/.zshrc'
-alias obsidian-sync='sh ~/Documents/Github/utilities/obsidian_sync.bash'
 alias vim=nvim 
 
-# git aliases
+# Category: Git 
 alias ga='git add .' # git add all files
 alias gbd='git branch -D' # branch delet 
 alias gb='git branch'
 alias diff='git diff'
 alias gpl='git pull origin $(git branch --show-current)' # pull from current branch
-alias gck='git checkout' # checkout to existing branch
-alias gckb='git checkout -b' # checkout to a new branch
+alias gco='git checkout' # checkout to existing branch
+alias gcob='git checkout -b' # checkout to a new branch
 alias s='git status'
 
 alias gps='git_push_with_branch_check'
@@ -57,12 +51,11 @@ git_commit_with_branch() {
   git commit -m "$commit_message"
 }
 
-# tmux aliases
-
+# Category: Tmux
 alias tska='tmux kill-ses -a' # kill al sessions but current
 
-alias tskn='kill_a_given_session_using_fzf' # kill a given session name
-kill_a_given_session_using_fzf() {
+alias tskn='tmux_kill_a_given_session_using_fzf' # kill a given session name
+tmux_kill_a_given_session_using_fzf() {
   if [[ $# -eq 1 ]] then
     selected=$1
   else
