@@ -13,13 +13,12 @@ ZSH_DISABLE_COMPFIX="true"
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # Category: Java Env
-alias java11='export JAVA_HOME=/usr/local/opt/openjdk@11 && mvn -v'
-alias java17='export JAVA_HOME=/usr/local/opt/openjdk@17 && mvn -v'
+alias java11='export JAVA_HOME=/usr/local/opt/ok@11 && mvn -v'
+alias java17='export JAVA_HOME=/opt/homebrew/opt/openjdk@17 && mvn -v'
 
 # Category: Utilities
 alias cat='bat --theme OneHalfDark'
 alias ls=lsd
-alias status='git status'
 alias zshrc='nvim ~/.zshrc'
 alias vim=nvim 
 
@@ -31,7 +30,7 @@ alias diff='git diff'
 alias gpl='git pull origin $(git branch --show-current)' # pull from current branch
 alias gco='git checkout' # checkout to existing branch
 alias gcob='git checkout -b' # checkout to a new branch
-alias s='git status'
+alias gs='git status'
 
 alias gps='git_push_with_branch_check'
 git_push_with_branch_check() {
@@ -53,5 +52,4 @@ git_commit_with_branch() {
 
 # Category: Tmux
 alias tska='tmux kill-ses -a' # kill al sessions but current
-
 alias tkill='tmux-killer'

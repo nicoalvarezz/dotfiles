@@ -16,7 +16,7 @@ disabled = true
 disabled = false
 
 [git_branch]
-style = "#B877DB bold"
+style = "#f2618a bold"
 
 # [git_status]
 # conflicted = "🏳"
@@ -43,7 +43,7 @@ style = "bold green"
 format = "via [$symbol $environment]($style) "	
 
 [username]
-style_user = "#FAB28E bold"
+style_user = "#eec382 bold"
 style_root = "black bold"
 format = "[$user]($style)@macosx "
 disabled = false
