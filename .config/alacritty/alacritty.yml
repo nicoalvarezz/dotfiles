@@ -79,6 +79,9 @@ font:
     style: Regular
   size: 13
 
+env:
+  TERM: xterm-256color
+
 window:
   padding:
     x: 2
