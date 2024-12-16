@@ -18,33 +18,15 @@ disabled = false
 [git_branch]
 style = "#8ea4f6 bold"
 
-# [git_status]
-# conflicted = "🏳"
-# ahead = "🏎💨"
-# behind = "😰"
-# diverged = "😵"
-# untracked = "🤷‍"
-# stashed = "📦"
-# modified = "📝"
-# staged = '[++\($count\)](green)'
-# renamed = "👅"
-# deleted = "🗑"
-
 [python]
 symbol = " "
 
 [java]
 symbol = " "
 
-[conda]
-ignore_base = false
-symbol = "🐍"
-style = "bold green"
-format = "via [$symbol $environment]($style) "	
-
 [username]
-style_user = "#eebae2 bold"
-style_root = "black bold"
+style_user = "#F9E2AF bold"
+style_root = "green bold"
 format = "[$user]($style)@macosx "
 disabled = false
 show_always = true
