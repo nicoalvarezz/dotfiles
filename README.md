@@ -25,6 +25,7 @@ You will also need to install extra CLI tools to fully use these configs:
 - [.zshrc](https://github.com/nicoalvarezz/dotfiles/blob/main/.zshrc)
 - [alacritty.toml](https://github.com/nicoalvarezz/dotfiles/blob/main/.config/alacritty/alacritty.toml)
 
+## Tmux
 [Tmux](https://github.com/tmux/tmux/wiki) is my go-to terminal multiplexer for managing multiple terminal sessions efficiently. My tmux set up focuses on simplicity, productivity, and aesthetics.
 
 ### Key Features
@@ -38,6 +39,42 @@ You will also need to install extra CLI tools to fully use these configs:
 - **Custom Keybidings**:
     - `Ctrl + b + f`: Quickly open a new sessions using `tmux-sessionizer`
     - `Ctrl + b + d`: Select session to be closed/deleted using `tmux-killer`
+
+### Basic Usage
+Once a tmux client is attached, any keys entered are forwarded to the program running in the active pane of the current window. For keys that control tmux itself, a special key must be pressed first - this is called the prefix key.
+
+The default prefix key is `C-b`, which means the `Ctrl` key and `b`.
+
+**Managing Windows**
+1. Crete a new window: `Prefix + c` (shown at the bottom)
+2. Switching between windows:
+	- `Prefix + window number` (shown at the bottom - status bar)
+	- Alternative - `Prefix + n` (next), `Prefix + p` (previous)
+3. Closing a window: `Prefix + &`
+
+**Managing Panes**
+1. Splitting horizontally: `Prefix + "`
+2. Splitting vertically: `Prefix + %`
+3. Navigating between panes: `Prefix + arrow keys`
+4. Swapping panes: `Prefix + { (open brace) or } (close brace)`
+5. Zooming into a pane: `Prefix + z`
+6. Turning a pane into a window: `Prefix + !`
+
+**Managing Sessions**
+1. Listing active sessions: `Prefix + s`
+2. Previewing windows for each session: `Prefix + w`
+3. Project navigation: `Prefix + f` (more on this in the next section)
+4. Search and select sessions to be closed: `Prefix + d` (more on this in the next section)
+
+**Copy and search text**
+1. Copy mode:
+	- begin selection: `Prefix + [`
+	- selection move: `vim motions`
+	- slection copy: `y`
+	- exit selection: `<C-c>`
+2. Search text:
+	 - `Prefix + [` - Enables text mode to move the cursor around the output
+	- `/` - Enables the search feature
 
 ### Tmux Utilities
 **tmux-sessionizer**
