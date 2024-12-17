@@ -91,7 +91,7 @@ export BAT_THEME="Catppuccin Mocha"
 
 # -------- EZA -------- 
 
-alias ls="eza --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions"
+alias ls="eza --oneline --all --git --git-ignore --color=always --icons=always"
 
 # -------- THEFUCK -------- 
 
