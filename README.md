@@ -40,7 +40,7 @@ You will also need to install extra CLI tools to fully use these configs:
     - `Ctrl + b + f`: Quickly open a new sessions using `tmux-sessionizer`
     - `Ctrl + b + d`: Select session to be closed/deleted using `tmux-killer`
 
-#### Tmux Utilities
+### Tmux Utilities
 
 **tmux-sessionizer**
 [tmux-sessionizer](https://github.com/nicoalvarezz/dotfiles/blob/main/.config/tmux/tmux-sessionizer) is a custom script that streamlines project navigation using Tmux sessions and fzf. It allows me to:
