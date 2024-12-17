@@ -25,30 +25,28 @@ You will also need to install extra CLI tools to fully use these configs:
 - [.zshrc](https://github.com/nicoalvarezz/dotfiles/blob/main/.zshrc)
 - [alacritty.toml](https://github.com/nicoalvarezz/dotfiles/blob/main/.config/alacritty/alacritty.toml)
 
-## Tmux
-[Tmux](https://github.com/tmux/tmux/wiki) is my go-to terminal multiplexer for managing multiple terminal sessions efficiently. My tmux set up focuses on simplicity, productivity, and asthetics.
+[Tmux](https://github.com/tmux/tmux/wiki) is my go-to terminal multiplexer for managing multiple terminal sessions efficiently. My tmux set up focuses on simplicity, productivity, and aesthetics.
 
 ### Key Features
-- **Mouse Support**: Eneabled for ease pane and window management
+- **Mouse Support**: Enabled for ease pane and window management
 - **Vi Mode**: Configured for navigating using familiar Vim-style keybindings
 - **Plugins for Enhanced Functionality**:
     - [tmp](https://github.com/tmux-plugins/tpm): Tmux Plugin Manager for managing and installing plugins
     - [tmux-yank](https://github.com/tmux-plugins/tmux-yank): Seamless copying to the system clipboard
-    - [minimal-tmux-status](https://github.com/niksingh710/minimal-tmux-status): A clean, minimalistic status bar with customizable colors
-- **Split Panes in the Current Directory**: Opening new panes inherits the current working direcotry for seamless navigation
+    - [minimal-tmux-status](https://github.com/niksingh710/minimal-tmux-status): A clean, minimalistic status bar with customisable colours
+- **Split Panes in the Current Directory**: Opening new panes inherits the current working directory for seamless navigation
 - **Custom Keybidings**:
     - `Ctrl + b + f`: Quickly open a new sessions using `tmux-sessionizer`
     - `Ctrl + b + d`: Select session to be closed/deleted using `tmux-killer`
 
 ### Tmux Utilities
-
 **tmux-sessionizer**
 [tmux-sessionizer](https://github.com/nicoalvarezz/dotfiles/blob/main/.config/tmux/tmux-sessionizer) is a custom script that streamlines project navigation using Tmux sessions and fzf. It allows me to:
 
 - **Quickly switch between projects**: Search for any project or directory within a specified path using the power of fzf.
 - **Create sessions on the fly**: If no Tmux session exists for a selected directory, it creates one automatically in that path.
 - **Seamlessly reuse sessions**: If a session for the directory already exists, it instantly switches to that session, saving time and avoiding duplicates.
-This integration makes navigating large project trees effortless and boosts productivity by keeping my sessions organized.
+This integration makes navigating large project trees effortless and boosts productivity by keeping my sessions organised.
 
 Credits to [ThePrimeagen](https://www.youtube.com/c/theprimeagen)
 
@@ -57,9 +55,8 @@ Credits to [ThePrimeagen](https://www.youtube.com/c/theprimeagen)
 
 - **An overview of all active sessions**: Displays a list of currently open Tmux sessions for easy management.
 - **Search and select functionality**: Use fzf to quickly find the session you want to close.
-- **Effortless session cleanup**: Ideal for keeping your Tmux environment clean and organized, especially when tools like tmux-sessionizer leave behind a trail of open sessions after frequent switching.
+- **Effortless session cleanup**: Ideal for keeping your Tmux environment clean and organised, especially when tools like tmux-sessionizer leave behind a trail of open sessions after frequent switching.
 
 To enhance usability, I’ve also set up an alias here for quick access to the script, bypassing the need for a keybinding.
 
 This tool complements tmux-sessionizer by ensuring my Tmux workflow remains efficient and clutter-free.
-
