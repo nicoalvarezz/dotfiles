@@ -62,3 +62,4 @@ Credits to [ThePrimeagen](https://www.youtube.com/c/theprimeagen)
 To enhance usability, I’ve also set up an alias here for quick access to the script, bypassing the need for a keybinding.
 
 This tool complements tmux-sessionizer by ensuring my Tmux workflow remains efficient and clutter-free.
+
