@@ -22,7 +22,6 @@ You will also need to install extra CLI tools to fully use these configs:
 - [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
 
 ### Ffz (command line fuzzy finder)
-
 `fzf` is an absolute must, when building an environment set up. This command line will allow for fuzzy finding in the command line.
 
 Install `fzf` with `homebrew`:
@@ -56,7 +55,6 @@ Examples of wha you can do with it:
 | `kill -9 **Tab`                               | Look for process name to kill to get pid         |
 | any command (like `nvim` or `code`) + `**TAB` | Look for files & directories to complete command |
 #### Use fd with fzf
-
 `fzf` by default uses the `find` command to look for files and directories.
 
 Let's replace that with `fd` for better functionality.
