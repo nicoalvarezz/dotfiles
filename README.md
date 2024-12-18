@@ -86,6 +86,27 @@ _fzf_compgen_dir() {
   fd --type=d --hidden --exclude .git . "$1"
 }
 ```
+### Fzf-git
+`fzf-git` is a powerful tool that integrates `fzf` with Git to provide intuitive key bindings for navigating Git objects. Each key binding enables you to browse specific types of Git objects and seamlessly select them for insertion into your command-line.
+
+Navigate to your home directory, and clone the repo:
+
+```bash
+git clone https://github.com/junegunn/fzf-git.sh.git
+```
+
+| Keybind   | Description                         |
+| --------- | ----------------------------------- |
+| `CTRL-GF` | Look for git files with fzf         |
+| `CTRL-GB` | Look for git branches with fzf      |
+| `CTRL-GT` | Look for git tags with fzf          |
+| `CTRL-GR` | Look for git remotes with fzf       |
+| `CTRL-GH` | Look for git commit hashes with fzf |
+| `CTRL-GS` | Look for git stashes with fzf       |
+| `CTRL-GL` | Look for git reflogs with fzf       |
+| `CTRL-GW` | Look for git worktrees with fzf     |
+| `CTRL-GE` | Look for git for-each-ref with fzf  |
+
 
 ### Relevant Files
 - [.zshrc](https://github.com/nicoalvarezz/dotfiles/blob/main/.zshrc)
