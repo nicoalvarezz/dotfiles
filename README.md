@@ -107,6 +107,37 @@ git clone https://github.com/junegunn/fzf-git.sh.git
 | `CTRL-GW` | Look for git worktrees with fzf     |
 | `CTRL-GE` | Look for git for-each-ref with fzf  |
 
+### Zsh utilities
+**[zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)**
+It suggests commands as you type based on history and completions.
+
+1. Install command:
+
+```bash
+brew install zsh-autosuggestions
+```
+
+2. To activate the autosuggestions, add the following at the end of your .zshrc:
+
+```bash
+source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+```
+
+**[zsh-syntax-highlight](https://github.com/zsh-users/zsh-syntax-highlighting)**
+This package provides syntax highlighting for the shell zsh. It enables highlighting of commands whilst they are typed at a zsh prompt into an interactive terminal.
+
+1. Install command:
+
+```bash
+brew install zsh-syntax-highlighting
+```
+
+2. Enable `zsh-syntax-highlight` by sourcing the script. Running this command on the terminal will add the source line to the end of your .zshrc:
+
+```bash
+echo "source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
+```
+
 
 ### Relevant Files
 - [.zshrc](https://github.com/nicoalvarezz/dotfiles/blob/main/.zshrc)
