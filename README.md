@@ -165,36 +165,28 @@ Once a tmux client is attached, any keys entered are forwarded to the program ru
 
 The default prefix key is `C-b`, which means the `Ctrl` key and `b`.
 
-**Managing Windows**
-1. Crete a new window: `Prefix + c` (shown at the bottom)
-2. Switching between windows:
-	- `Prefix + window number` (shown at the bottom - status bar)
-	- Alternative - `Prefix + n` (next), `Prefix + p` (previous)
-3. Closing a window: `Prefix + &`
-
-**Managing Panes**
-1. Splitting horizontally: `Prefix + "`
-2. Splitting vertically: `Prefix + %`
-3. Navigating between panes: `Prefix + arrow keys`
-4. Swapping panes: `Prefix + { (open brace) or } (close brace)`
-5. Zooming into a pane: `Prefix + z`
-6. Turning a pane into a window: `Prefix + !`
-
-**Managing Sessions**
-1. Listing active sessions: `Prefix + s`
-2. Previewing windows for each session: `Prefix + w`
-3. Project navigation: `Prefix + f` (more on this in the next section)
-4. Search and select sessions to be closed: `Prefix + d` (more on this in the next section)
-
-**Copy and search text**
-1. Copy mode:
-	- begin selection: `Prefix + [`
-	- selection move: `vim motions`
-	- slection copy: `y`
-	- exit selection: `<C-c>`
-2. Search text:
-	 - `Prefix + [` - Enables text mode to move the cursor around the output
-	- `/` - Enables the search feature
+| **Category**             | **Action**                      | **Command**                                             |
+| ------------------------ | ------------------------------- | ------------------------------------------------------- |
+| **Managing Windows**     | Create a new window             | `Prefix + c` (shown at the bottom)                      |
+|                          | Switch between windows          | `Prefix + window number` (status bar)                   |
+|                          |                                 | `Prefix + n` (next), `Prefix + p` (previous)            |
+|                          | Close a window                  | `Prefix + &`                                            |
+| **Managing Panes**       | Split horizontally              | `Prefix + "`                                            |
+|                          | Split vertically                | `Prefix + %`                                            |
+|                          | Navigate between panes          | `Prefix + arrow keys`                                   |
+|                          | Swap panes                      | `Prefix + {` (open brace) or `Prefix + }` (close brace) |
+|                          | Zoom into a pane                | `Prefix + z`                                            |
+|                          | Turn a pane into a window       | `Prefix + !`                                            |
+| **Managing Sessions**    | List active sessions            | `Prefix + s`                                            |
+|                          | Preview windows in each session | `Prefix + w`                                            |
+|                          | Project navigation              | `Prefix + f` (more details in the next section)         |
+|                          | Search and close sessions       | `Prefix + d` (more details in the next section)         |
+| **Copy and Search Text** | Copy mode: Begin selection      | `Prefix + [`                                            |
+|                          | Copy mode: Move selection       | vim motions                                             |
+|                          | Copy mode: Copy selection       | `y`                                                     |
+|                          | Copy mode: Exit                 | `<C-c>`                                                 |
+|                          | Search text: Enable text mode   | `Prefix + [`                                            |
+|                          | Search text: Start search       | `/`                                                     |
 
 ### Tmux Utilities
 **tmux-sessionizer**
