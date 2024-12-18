@@ -137,6 +137,10 @@ _git_rebase() {
     git pull origin "$branch_name" --rebase 
 }
 
+# -------- DIRS -------- 
+
+alias ..="cd .."
+
 # -------- TMUX -------- 
 
 alias tska='tmux kill-ses -a' # kill all sessions but current
