@@ -109,6 +109,7 @@ git clone https://github.com/junegunn/fzf-git.sh.git
 
 ### Zsh utilities
 **[zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)**
+
 It suggests commands as you type based on history and completions.
 
 1. Install command:
@@ -124,6 +125,7 @@ source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 ```
 
 **[zsh-syntax-highlight](https://github.com/zsh-users/zsh-syntax-highlighting)**
+
 This package provides syntax highlighting for the shell zsh. It enables highlighting of commands whilst they are typed at a zsh prompt into an interactive terminal.
 
 1. Install command:
