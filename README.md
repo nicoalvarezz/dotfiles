@@ -21,6 +21,74 @@ You will also need to install extra CLI tools to fully use these configs:
 - [zsh-syntax-highlight](https://github.com/zsh-users/zsh-syntax-highlighting)
 - [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
 
+### Ffz (command line fuzzy finder)
+
+`fzf` is an absolute must, when building an environment set up. This command line will allow for fuzzy finding in the command line.
+
+Install `fzf` with `homebrew`:
+
+```bash
+brew install fzf
+```
+
+To enable `fzf` key bindings and fuzzy completion, add the following to your `.zshrc`:
+
+```bash
+eval "$(fzf --zsh)"
+```
+
+Examples of wha you can do with it:
+
+| Example                                       | Description                                      |
+| --------------------------------------------- | ------------------------------------------------ |
+| `CTRL-t`                                      | Look for files and directories                   |
+| `CTRL-r`                                      | Look through command history                     |
+| `ENTER`                                       | Select the item                                  |
+| `CTRL-j` or `CTRL-n` or `Down arrow`          | Go down one result                               |
+| `CTRL-k` or `CTRL-p` or `Up arrow`            | Go up one result                                 |
+| `TAB`                                         | Mark a result                                    |
+| `SHIFT+TAB`                                   | Unmark a result                                  |
+| `cd **TAB`                                    | Open up fzf to find directory                    |
+| `export **TAB`                                | Look for env variable to export                  |
+| `unset **TAB`                                 | Look for env variable to unset                   |
+| `unalias **TAB`                               | Look for alias to unalias                        |
+| `ssh **TAB`                                   | Look for recently visited host names             |
+| `kill -9 **Tab`                               | Look for process name to kill to get pid         |
+| any command (like `nvim` or `code`) + `**TAB` | Look for files & directories to complete command |
+#### Use fd with fzf
+
+`fzf` by default uses the `find` command to look for files and directories.
+
+Let's replace that with `fd` for better functionality.
+
+Install `fd`:
+
+```bash
+brew install fd
+```
+
+Add the following to your `.zshrc` file
+
+```bash
+# -- Use fd instead of fzf --
+
+export FZF_DEFAULT_COMMAND="fd --hidden --strip-cwd-prefix --exclude .git"
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+export FZF_ALT_C_COMMAND="fd --type=d --hidden --strip-cwd-prefix --exclude .git"
+
+# Use fd (https://github.com/sharkdp/fd) for listing path candidates.
+# - The first argument to the function ($1) is the base path to start traversal
+# - See the source code (completion.{bash,zsh}) for the details.
+_fzf_compgen_path() {
+  fd --hidden --exclude .git . "$1"
+}
+
+# Use fd to generate the list for directory completion
+_fzf_compgen_dir() {
+  fd --type=d --hidden --exclude .git . "$1"
+}
+```
+
 ### Relevant Files
 - [.zshrc](https://github.com/nicoalvarezz/dotfiles/blob/main/.zshrc)
 - [alacritty.toml](https://github.com/nicoalvarezz/dotfiles/blob/main/.config/alacritty/alacritty.toml)
