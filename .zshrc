@@ -8,6 +8,9 @@ eval "$(starship init zsh)"
 
 # -------- ZSH_UTILITIES -------- 
 
+# export ~/bin with custom scripts to the PATH so they can be executed anywhere out of the box
+export PATH=$PATH:~/bin
+
 ZSH_DISABLE_COMPFIX="true"
 
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
