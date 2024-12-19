@@ -6,9 +6,9 @@
 
 
 if [[ $# -eq 1 ]]; then
-  selected=$1
+    selected=$1
 else
-  selected=$(fd --type d --max-depth 1 --absolute-path '' ~/Dropbox/ ~/.config ~/Documents/Github | fzf)
+    selected=$(fd --type d --max-depth 1 --absolute-path '' ~/Dropbox/ ~/.config ~/Documents/Github | fzf --preview='eza --tree --color=always --all --icons=always --no-git --git-ignore {} | head -200' "$@")
 fi
 
 if [[ -z $selected ]]; then
