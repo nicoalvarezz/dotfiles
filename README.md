@@ -107,6 +107,65 @@ git clone https://github.com/junegunn/fzf-git.sh.git
 | `CTRL-GW` | Look for git worktrees with fzf     |
 | `CTRL-GE` | Look for git for-each-ref with fzf  |
 
+### Bat
+`bat` is a really nice alternative to cat to display file contents in the terminal with syntax highlighting.
+
+Install with `homebrew`:
+
+```bash
+brew install bat
+```
+
+Now it is ready to be used.
+
+```
+bat <filename>
+```
+
+To see examples of all the possible themes that can be used:
+
+```
+bat --list-themes | fzf --preview="bat --theme={} --color=always </path/to/file>"
+```
+
+It is also possible to use a custom theme by following these steps.
+
+The first time a new theme for bat is added, create the following directory:
+
+```bash
+mkdir -p "$(bat --config-dir)/themes"
+```
+
+And move into it:
+
+```bash
+cd "$(bat --config-dir)/themes"
+```
+
+Then you can download the file for the theme you want to use into this directory. The theme file should use the `.tmTheme` extension.
+
+In my case, I use the [Catppuccin for Bat](https://github.com/catppuccin/bat).
+
+Copy the theme files from this repository:
+
+```bash
+wget -P "$(bat --config-dir)/themes" https://github.com/catppuccin/bat/raw/main/themes/Catppuccin%20Mocha.tmTheme
+```
+
+Rebuild bat's cache:
+
+```bash
+bat cache --build
+```
+
+Run bat `--list-themes`, and check if the themes are present in the list.
+
+To use the new theme, add the following to your `.zshrc`
+
+```bash
+export BAT_THEME="Catppuccin Mocha"
+```
+
 ### Zsh utilities
 **[zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)**
 
