@@ -8,7 +8,7 @@
 if [[ $# -eq 1 ]]; then
   selected=$1
 else
-  selected=$(find ~/Dropbox/ ~/.config ~/Documents/Github -mindepth 1 -maxdepth 1 -type d | fzf)
+  selected=$(fd --type d --max-depth 1 --absolute-path '' ~/Dropbox/ ~/.config ~/Documents/Github | fzf)
 fi
 
 if [[ -z $selected ]]; then
