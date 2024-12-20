@@ -7,11 +7,7 @@ else
     selected=$(tmux ls | sed 's/ .*//' | sed 's/.$//' | fzf -m) 
 fi
  
-if [[ $(echo "$selected" | wc -l) -gt 1 ]]; then
-    echo "$selected" | while read -r session; do
-        tmux kill-ses -t "$session"
-    done
-else
-    tmux kill-ses -t "$selected"
-fi
+for session in $selected; do
+    tmux kill-ses -t "$session"
+done
 
