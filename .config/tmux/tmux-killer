@@ -4,8 +4,14 @@ if [[ $# -eq 1 ]]; then
     selected=$1
 else
     # ls all tmux sessions; take the first word; remove last character (which is ':'); pipe it through fzf
-    selected=$(tmux ls | sed 's/ .*//' | sed 's/.$//' | fzf)
+    selected=$(tmux ls | sed 's/ .*//' | sed 's/.$//' | fzf -m) 
 fi
-tmux kill-ses -t $selected
  
+if [[ $(echo "$selected" | wc -l) -gt 1 ]]; then
+    echo "$selected" | while read -r session; do
+        tmux kill-ses -t "$session"
+    done
+else
+    tmux kill-ses -t "$selected"
+fi
 
