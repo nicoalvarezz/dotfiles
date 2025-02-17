@@ -4,7 +4,7 @@ if [[ $# -eq 1 ]]; then
     selected=$1
 else
     # ls all tmux sessions; take the first word; remove last character (which is ':'); pipe it through fzf
-    selected=$(tmux ls | sed 's/ .*//' | sed 's/.$//' | fzf -m) 
+    selected=$(tmux ls | sed 's/ .*//' | sed 's/.$//' | fzf --style full -m) 
 fi
  
 for session in $selected; do
