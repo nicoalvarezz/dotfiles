@@ -166,6 +166,18 @@ To use the new theme, add the following to your `.zshrc`
 export BAT_THEME="Catppuccin Mocha"
 ```
 
+### Eza
+To do...
+
+### Delta
+To do...
+
+### tldr
+To do...
+
+### thefuck
+To do...
+
 ### Zsh utilities
 **[zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)**
 
