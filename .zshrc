@@ -1,12 +1,12 @@
-# -------- NEOFETCH -------- 
+# -------- NEOFETCH --------
 
 neofetch
 
-# -------- STARSHIPT -------- 
+# -------- STARSHIPT --------
 
 eval "$(starship init zsh)"
 
-# -------- ZSH_UTILITIES -------- 
+# -------- ZSH_UTILITIES --------
 
 # export ~/bin with custom scripts to the PATH so they can be executed anywhere out of the box
 export PATH=$PATH:~/bin
@@ -20,7 +20,7 @@ source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 HISTFILE=$HOME/.zhistory
 SAVEHIST=1000
 HISTSIZE=999
-setopt share_history 
+setopt share_history
 setopt hist_expire_dups_first
 setopt hist_ignore_dups
 setopt hist_verify
@@ -29,13 +29,18 @@ setopt hist_verify
 bindkey '^[[A' history-search-backward
 bindkey '^[[B' history-search-forward
 
-# -------- JAVA -------- 
+#  -------- APPS -------
+
+alias i=idea
+alias rr=rustrover
+
+# -------- JAVA --------
 
 alias java11='export JAVA_HOME=/usr/local/opt/ok@11 && mvn -v'
 alias java17='export JAVA_HOME=/opt/homebrew/opt/openjdk@17 && mvn -v'
 alias java21='export JAVA_HOME=/opt/homebrew/opt/openjdk@21 && mvn -v'
 
-# -------- FZF -------- 
+# -------- FZF --------
 
 # Set up fzf and fuzzy completion
 eval "$(fzf --zsh)"
@@ -47,6 +52,10 @@ export FZF_DEFAULT_OPTS=" \
 --color=fg:#cdd6f4,header:#f38ba8,info:#cba6f7,pointer:#f5e0dc \
 --color=marker:#b4befe,fg+:#cdd6f4,prompt:#cba6f7,hl+:#f38ba8 \
 --color=selected-bg:#45475a \
+--border
+--info=inline
+--margin=8,20
+--padding=1
 --multi"
 
 # Use fd instead of find for fzf
@@ -89,25 +98,25 @@ _fzf_comprun() {
   esac
 }
 
-# -------- BAT -------- 
+# -------- BAT --------
 
 export BAT_THEME="Catppuccin Mocha"
 
-# -------- EZA -------- 
+# -------- EZA --------
 
 alias ls="eza --oneline --all --git --git-ignore --color=always --icons=always"
 
-# -------- THEFUCK -------- 
+# -------- THEFUCK --------
 
 eval $(thefuck --alias)
 eval $(thefuck --alias fk)
 
-# -------- ALIASES -------- 
+# -------- ALIASES --------
 
 alias zshrc='nvim ~/.zshrc'
-alias vim=nvim 
+alias vim=nvim
 
-# -------- GIT -------- 
+# -------- GIT --------
 
 alias ga='git add'
 alias gb='git branch'
@@ -118,6 +127,7 @@ alias gs='git status'
 alias gc='_git_commit_with_branch_name'
 alias gps='_git_push'
 alias rebase='_git_rebase'
+alias bc=git branch | grep -vE 'main|master' | xargs git branch -D
 
 _git_push() {
   branch_name=$(git branch --show-current)
@@ -138,15 +148,18 @@ _git_commit_with_branch_name() {
 
 _git_rebase() {
     branch_name=$(git branch --show-current)
-    git pull origin "$branch_name" --rebase 
+    git pull origin "$branch_name" --rebase
 }
 
-# -------- DIRS -------- 
+# -------- DIRS --------
 
 alias ..="cd .."
 
-# -------- TMUX -------- 
+# -------- TMUX --------
 
 alias tska='tmux kill-ses -a' # kill all sessions but current
 alias tkill='tmux-killer'
 
+# -------- ORBITAL -------
+
+alias orbital=orbital-cli
