@@ -6,6 +6,9 @@ neofetch
 
 eval "$(starship init zsh)"
 
+# -------- JAVA INIT --------
+export JAVA_HOME=/opt/homebrew/opt/openjdk@21
+
 # -------- ZSH_UTILITIES --------
 
 # export ~/bin with custom scripts to the PATH so they can be executed anywhere out of the box
@@ -127,7 +130,8 @@ alias gs='git status'
 alias gc='_git_commit_with_branch_name'
 alias gps='_git_push'
 alias rebase='_git_rebase'
-alias bc=git branch | grep -vE 'main|master' | xargs git branch -D
+alias bc='git branch | grep -vE "^\*|main|master" | xargs -n 1 git branch -D'
+alias squashn='f() { git reset --soft HEAD~${1} && git commit --reuse-message=HEAD@{1} --no-edit; }; f'
 
 _git_push() {
   branch_name=$(git branch --show-current)
@@ -142,7 +146,7 @@ _git_push() {
 
 _git_commit_with_branch_name() {
   branch_name=$(git branch --show-current)
-  commit_message="$branch_name $*"
+  commit_message="$branch_name : $*"
   git commit -m "$commit_message"
 }
 
